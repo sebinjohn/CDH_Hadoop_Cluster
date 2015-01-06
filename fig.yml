@@ -1,5 +1,5 @@
 cmserver:
-  image:  cm_server
+  image:  sebin/cm_server
   links:
     - mysqltest:cmdb
   ports:
@@ -9,7 +9,7 @@ cmserver:
   domainname: cluster.com
 
 cmagent:
-  image: cm_agent
+  image: sebin/cm_agent
   links:
     - cmserver
   domainname: cluster.com
