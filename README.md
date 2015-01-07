@@ -3,11 +3,11 @@ CDH_Hadoop_Cluster
 
 This is a test to containerize CDH Cluster
 
-``
+```
 git clone https://github.com/sebinjohn/CDH_Hadoop_Cluster.git
   cd CDH_Hadoop_Cluster/
   fig up
-``
+```
 ``fig ps`` gives the list of running container names
 
 open ``http://<cmserver_ip>:7180/ ``
