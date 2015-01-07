@@ -16,9 +16,10 @@ cmagent:
 
 mysqltest:
   image: mysql:5.6
-  volumes:
-    - /home/vagrant/mysql_data_dir:/var/lib/mysql
   environment:
     - MYSQL_ROOT_PASSWORD=root
+    - MYSQL_DATABASE=cmf
+    - MYSQL_USER=cmf
+    - MYSQL_PASSWORD=cmf
   hostname: mysql
   domainname: cluster.com
