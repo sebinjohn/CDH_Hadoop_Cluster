@@ -20,7 +20,8 @@ To scale to N number of agents : ``fig scale cmagent=N``
 
 If you want to persist the data in mysql, open the fig.yml and add the below 2 lines unders <b>mysqltest:</b>
 
-``` volumes:
+```
+  volumes:
      - <Data Dir>:/var/lib/mysql
 ```
 
