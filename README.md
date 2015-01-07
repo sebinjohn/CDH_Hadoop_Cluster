@@ -26,15 +26,14 @@ fig kill
 docker rm $(docker ps -a -q)
 fig up
 
-
-Prerequisite
-====================
-
-fig should be installed in your system.
-
 take the IP address of the cmserver, which runs cloudera manager; go to browser and http://<cmserver_ip>:7180/
 
 username : admin
 password : admin
 
 you can scale or down using fig scale cmagent=number of services you require
+
+Prerequisite
+====================
+
+fig should be installed in your system.
