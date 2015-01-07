@@ -4,7 +4,7 @@ CDH_Hadoop_Cluster
 This is a test to containerize CDH Cluster
 
 ```
-git clone https://github.com/sebinjohn/CDH_Hadoop_Cluster.git
+  git clone https://github.com/sebinjohn/CDH_Hadoop_Cluster.git
   cd CDH_Hadoop_Cluster/
   fig up
 ```
@@ -12,19 +12,17 @@ git clone https://github.com/sebinjohn/CDH_Hadoop_Cluster.git
 
 open ``http://<cmserver_ip>:7180/ ``
 
-``
+```
 username : admin
 password : admin
-``
-To scale the N number of agents
-
-``fig scale cmagent=N``
+```
+To scale to N number of agents : ``fig scale cmagent=N``
 
 If you want to persist the data in mysql, open the fig.yml and add the below 2 lines unders <b>mysqltest:</b>
 
-`` volumes:
+``` volumes:
      - <Data Dir>:/var/lib/mysql
-``
+```
 
 Replace Data_Dir with an existing empty directory
 
