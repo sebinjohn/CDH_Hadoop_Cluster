@@ -1,7 +1,13 @@
-CDH_Hadoop_Cluster
+Containerize a CDH Cluster
 ==================
 
-This is a test to containerize CDH Cluster
+This is a test to containerize CDH Cluster. This fig file brings up 3 containers
+1. MySQL Container : data in non persistant
+2. Cloudera Manager Server
+3. Cloudera Manager Agent
+
+Further development is needed, like opening some ports in agent to install Hadoop in the cluster
+formed by the agent containers. This work is going on
 
 ```
   git clone https://github.com/sebinjohn/CDH_Hadoop_Cluster.git
