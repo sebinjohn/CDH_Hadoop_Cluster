@@ -15,7 +15,7 @@ password : admin
 
 To scale the number of agents to NUM
 
-fig scale cmagent=NUM
+``fig scale cmagent=NUM``
 
 If you want to persist the data in mysql, open the fig.yml and add the below 2 lines unders <b>mysqltest:</b>
 
@@ -23,6 +23,8 @@ volumes:
     - <Data Dir>:/var/lib/mysql
 
 Replace Data_Dir with an existing empty directory
+
+Dockerfile for cloudera manager server is available <a href="https://github.com/sebinjohn/cloudera_manager">here</a>
 
 Prerequisite
 ====================
