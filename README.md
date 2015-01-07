@@ -21,10 +21,13 @@ If you want to persist the data in mysql, open the fig.yml and add the below 2 l
 
 volumes:
     - <Data Dir>:/var/lib/mysql
-    
+
 Replace Data_Dir with an existing empty directory
 
 Prerequisite
 ====================
 
 fig and docker should be installed in your system.
+
+
+The code has been tested using ubuntu14.04 vagrant image See the Vagrantfile
